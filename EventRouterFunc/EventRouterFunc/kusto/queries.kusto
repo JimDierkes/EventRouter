@@ -1,0 +1,12 @@
+﻿https://docs.microsoft.com/en-us/azure/azure-functions/functions-monitoring#version-2x-3
+
+customEvents 
+| where timestamp > ago(1h) 
+| where name == "EventProcessed"
+| summarize EventsProcessed=count(customMeasurements.processingTime), AverageProcessingTime=avg(todecimal(customMeasurements.processingTime))
+
+customEvents 
+| where timestamp > ago(15m) 
+| where name == "EventProcessed"
+| summarize percentiles(todecimal(customMeasurements.processingTime), 5, 50, 95)
+

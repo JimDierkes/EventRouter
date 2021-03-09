@@ -1,0 +1,21 @@
+﻿https://docs.microsoft.com/en-us/azure/azure-functions/functions-monitoring#version-2x-3
+
+https://docs.microsoft.com/en-us/rest/api/storageservices/create-service-sas
+A service SAS cannot grant access to certain operations:
+
+Containers, queues, and tables cannot be created, deleted, or listed.
+Container metadata and properties cannot be read or written.
+Queues cannot be cleared and their metadata may not be written.
+Containers cannot be leased.
+
+Permissions for a queue
+PERMISSIONS FOR A QUEUE
+Permission	URI symbol	Allowed operations
+Read	r	Read metadata and properties, including message count. Peek at messages.
+Add	a	Add messages to the queue.
+Update	u	Update messages in the queue. Note: Use the Process permission with Update so you can first get the message you want to update.
+Process	p	Get and delete messages from the queue.
+
+Allowed services: Queue
+Allowed resource types: Container and Object
+Allowed permissions: Read, Write, Add Process

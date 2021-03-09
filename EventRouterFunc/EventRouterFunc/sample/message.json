@@ -1,0 +1,37 @@
+{
+  "topic": "/subscriptions/f965680d-75b9-4150-bd8b-f6d3946aca79/resourceGroups/att-autoloader-queuepoc-rg/providers/Microsoft.Storage/storageAccounts/attautoloaderqueuepoc05",
+  "subject": "/blobServices/default/containers/fs001/blobs/table0001/file000000.parquet",
+  "eventType": "Microsoft.Storage.BlobCreated",
+  "id": "fe852ac8-401f-0015-5492-0fe7b106a0fa",
+  "data": {
+    "api": "CreateFile",
+    "clientRequestId": "4606ed92-a0a7-4fc6-913c-3dfadce1260b",
+    "requestId": "fe852ac8-401f-0015-5492-0fe7b1000000",
+    "eTag": "0x8D8DDA983DB149A",
+    "contentType": "application/octet-stream",
+    "contentLength": 0,
+    "contentOffset": 0,
+    "blobType": "BlockBlob",
+    "blobProperties": [
+      {
+        "acl": [
+          {
+            "access": "u::rw,g::r,o::",
+            "permission": "0640",
+            "owner": "$superuser",
+            "group": "$superuser"
+          }
+        ]
+      }
+    ],
+    "blobUrl": "https://attautoloaderqueuepoc05.blob.core.windows.net/fs001/table0001/file000000.parquet",
+    "url": "https://attautoloaderqueuepoc05.dfs.core.windows.net/fs001/table0001/file000000.parquet",
+    "sequencer": "0000000000000000000000000000099c000000000029ae4d",
+    "storageDiagnostics": {
+      "batchId": "6cda49a7-36d9-4d54-8672-e70e39cf3b03"
+    }
+  },
+  "dataVersion": "3",
+  "metadataVersion": "1",
+  "eventTime": "2021-03-02T18:32:20.4325827Z"
+}
